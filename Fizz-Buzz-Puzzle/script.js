@@ -1,22 +1,23 @@
 // function for the puzzle
+
 function FizzBuzz(n){
-    for (let j = 0; j<= n; j++ ){
-        if (j % 3 == 0 && j % 5 == 0 && j != 0){
-            console.log('Fizz Buzz');
+    for (let i = 0; i<= n; i++ ){
+        if (i % 3 == 0 && i % 5 == 0 && i != 0){
+            console.log('Fizz Buzz'); // it will buzz if the condition works
         }
-        else if (j % 5 == 0 && j != 0){
+        else if (i % 5 == 0 && i != 0){
             console.log('Buzz');
         }
-        else if (j % 3 == 0 && j != 0){
+        else if (i % 3 == 0 && i != 0){
             console.log('Fizz');
         }
         else {
-            console.log(j);
+            console.log(i); // otherwise return to the main
         }
     }
     
 }
 
-var n = 10
+var n = 10 // suppose the we have 10 
 
 FizzBuzz(n);
